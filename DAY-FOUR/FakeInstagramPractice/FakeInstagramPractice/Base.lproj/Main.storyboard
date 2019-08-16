@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FakeInstagramPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auS-pW-lsJ">
+                                <rect key="frame" x="0.0" y="65" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Fake Instagram" id="FVP-cJ-jzQ">
+                                        <barButtonItem key="rightBarButtonItem" title="NEXT" id="VBB-bz-F0c">
+                                            <connections>
+                                                <segue destination="ouY-xi-9cf" kind="show" id="dcq-PI-Hl4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Kgg-EQ-9BU">
+                                <rect key="frame" x="-63" y="132" width="540" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="304" id="lLe-YN-YUL"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Yellow!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4F-Ck-I7V">
+                                <rect key="frame" x="128" y="444" width="158" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Kgg-EQ-9BU" firstAttribute="centerX" secondItem="auS-pW-lsJ" secondAttribute="centerX" id="BXc-Lu-Kdg"/>
+                            <constraint firstItem="Kgg-EQ-9BU" firstAttribute="top" secondItem="auS-pW-lsJ" secondAttribute="bottom" constant="23" id="IPF-y0-eQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D4F-Ck-I7V" secondAttribute="trailing" constant="128" id="IrI-xB-Gb8"/>
+                            <constraint firstItem="Kgg-EQ-9BU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="132" id="PWb-wS-F5I"/>
+                            <constraint firstItem="D4F-Ck-I7V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="SDN-Ud-Jo6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D4F-Ck-I7V" secondAttribute="trailing" constant="128" id="SGo-sD-4eB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D4F-Ck-I7V" secondAttribute="trailing" constant="128" id="Snn-Pb-fKy"/>
+                            <constraint firstItem="D4F-Ck-I7V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="TGG-5K-Vn4"/>
+                            <constraint firstItem="D4F-Ck-I7V" firstAttribute="top" secondItem="Kgg-EQ-9BU" secondAttribute="bottom" constant="8" id="bnB-FM-1yx"/>
+                            <constraint firstItem="D4F-Ck-I7V" firstAttribute="top" secondItem="Kgg-EQ-9BU" secondAttribute="bottom" constant="8" id="boR-vJ-O97"/>
+                            <constraint firstItem="D4F-Ck-I7V" firstAttribute="top" secondItem="Kgg-EQ-9BU" secondAttribute="bottom" constant="8" id="jcI-Sk-hX8"/>
+                            <constraint firstItem="Kgg-EQ-9BU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="maW-Nf-5Q8"/>
+                            <constraint firstItem="Kgg-EQ-9BU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o5B-da-qe8"/>
+                            <constraint firstItem="D4F-Ck-I7V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="uJF-Kk-2u6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Blg-hH-Sj7" appends="YES" id="U2g-xy-hue"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Blg-hH-Sj7"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tqt-yp-Faf">
+            <objects>
+                <viewController id="ouY-xi-9cf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOD-VF-vaV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFm-xO-xfT">
+                                <rect key="frame" x="0.0" y="69" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fake Instagram" id="TBU-WW-sRb">
+                                        <barButtonItem key="leftBarButtonItem" title="BACK" id="H3O-rq-9oS">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="ZXU-vy-NtJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AF0-ZT-RwT"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="YHT-Tr-zns"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5AD-sB-AMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yellow" width="540" height="605"/>
+    </resources>
+</document>
